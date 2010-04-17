@@ -1,6 +1,6 @@
 <?php
-
-class ContributionClient {
+require_once('transparencydata_client.php');
+class ContributionClient extends TransparencyDataClient {
     private $endpoint = 'contributions.json';
     private $parameters = array(
         'amount', 'contributor_ft', 'contributor_state', 'cycle',

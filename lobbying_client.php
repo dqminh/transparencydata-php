@@ -1,6 +1,6 @@
 <?php
-
-class LobbyingClient {
+require_once('transparencydata_client.php');
+class LobbyingClient extends TransparencyDataClient {
     private $endpoint = 'lobbying.json';
     private $parameters = array(
         'amount', 'client_ft', 'client_parent_ft', 'filling_type',
